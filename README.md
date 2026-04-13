@@ -39,3 +39,6 @@ Me salta todo el rato un error de _StyleSheet doesn't exist_ eso quiere decir qu
 
 ### Ejercicio 3
 Añadir `DetalleExcursionComponent.js`, actualizamos el componente `CampobaseComponent.js` para que el metodo return renderice la información y añadimos el metodo _`OnPress()`_ al componente `CalendarioComponent.js`.
+
+### Ejercicio 4
+Modificar los archivos pedidos en el ejercicio 4 con los obtenidos de .zip. Modificación ligera del codifo de `CampobaseComponent.js` y de `DetalleExcursionComponent.js` para que se pueda ejecutar el programa bien ya que el import de `excursiones.js` no era correcto.
