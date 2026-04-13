@@ -42,3 +42,6 @@ Añadir `DetalleExcursionComponent.js`, actualizamos el componente `CampobaseCom
 
 ### Ejercicio 4
 Modificar los archivos pedidos en el ejercicio 4 con los obtenidos de .zip. Modificación ligera del codifo de `CampobaseComponent.js` y de `DetalleExcursionComponent.js` para que se pueda ejecutar el programa bien ya que el import de `excursiones.js` no era correcto.
+
+### Ejercicio 5
+Añadidos los archivos `HomeComponent.js`, `cabeceras.js` y `actividades.js`. Modificado el Componente `CampobaseComponent.js`.
