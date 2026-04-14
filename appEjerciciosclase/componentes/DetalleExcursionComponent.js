@@ -1,29 +1,28 @@
 import { Component } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, ImageBackground } from 'react-native';
 import { Card, Text } from 'react-native-paper';
 import { EXCURSIONES } from './comun/excursiones';
+
+
 
 function RenderExcursion(props) {
   const excursion = props.excursion;
 
   if (excursion != null) {
     return (
-      <Card style={styles.card}>
-        <Card.Title
-          title={excursion.nombre}
-          titleStyle={styles.titulo}
-          style={styles.cardTitle}
-        />
-        <Card.Cover
-          source={require('./imagenes/40Años.png')}
-          style={styles.image}
-        />
-        <Card.Content>
-          <Text style={styles.descripcion}>
-            {excursion.descripcion}
-          </Text>
-        </Card.Content>
-      </Card>
+        <Card style={styles.card}>
+          <ImageBackground
+            source={require('./imagenes/40Años.png')}
+            style={styles.image}
+          >
+            <Text style={styles.title}>{excursion.nombre}</Text>
+          </ImageBackground>
+          <Card.Content>
+            <Text style={styles.descripcion}>
+              {excursion.descripcion}
+            </Text>
+          </Card.Content>
+        </Card>
     );
   } else {
     return <View />;
@@ -61,6 +60,17 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     alignItems: 'center',
+  },
+  image: {
+    height: 200,
+    justifyContent: 'flex-end'
+  },
+  title: {
+    color: 'chocolate',
+    textAlign: 'center',
+    flex: 1,
+    fontSize: 25,
+    padding: 10,
   },
 });
 

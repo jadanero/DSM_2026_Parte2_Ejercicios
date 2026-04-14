@@ -13,6 +13,9 @@ npm audit fix
     - [Ejercicio 1](#Ejercicio-1)
     - [Ejercicio 2](#Ejercicio-2)
     - [Ejercicio 3](#Ejercicio-3)
+    - [Ejercicio 4](#Ejercicio-4)
+    - [Ejercicio 5](#Ejercicio-5)
+    - [Ejercicio 6](#Ejercicio-6)
 
 ## Ejercicios
 ### Ejercicio 1
@@ -45,3 +48,6 @@ Modificar los archivos pedidos en el ejercicio 4 con los obtenidos de .zip. Modi
 
 ### Ejercicio 5
 Añadidos los archivos `HomeComponent.js`, `cabeceras.js` y `actividades.js`. Modificado el Componente `CampobaseComponent.js`.
+
+### Ejercicio 6
+Modificación de `CampobaseComponent.js` para añadir en la ventana deslizante los apartados Quienes somos y Contato. Componentes nuevos en la carpeta `/Componentes` (`QuienesSomosComponent.js` y `ContatoComponent.js`). 
