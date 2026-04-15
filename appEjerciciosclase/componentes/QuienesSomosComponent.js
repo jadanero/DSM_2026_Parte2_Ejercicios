@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, FlatList } from 'react-native';
-import { Card, List } from 'react-native-paper';
+import { View, StyleSheet, FlatList } from 'react-native';
+import { Card, List , Text} from 'react-native-paper';
 import { ACTIVIDADES } from './comun/actividades';
 
 function Historia() {
@@ -52,34 +52,28 @@ class QuienesSomos extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    marginTop: 50,
-    flex: 1,
-    padding: 10,
-    backgroundColor: '#f2f2f2'
-  },
-
-  card: {
-    marginBottom: 15,
-    borderRadius: 10,
-    elevation: 3
-  },
-
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: 'chocolate'
-  },
-
-  text: {
-    fontSize: 15,
-    lineHeight: 22,
-    color: '#333'
-  },
-
-  listItem: {
-    paddingVertical: 5
-  }
+    container: {
+        marginTop: 50,
+        flex: 1,
+        padding: 10,
+        backgroundColor: '#f2f2f2'
+    },
+    card: {
+        margin: 8,
+    },
+    image: {
+        marginHorizontal: 0,
+    },
+    descripcion: {
+        marginTop: 20,
+        marginBottom: 20,
+    },
+    titulo: {
+        textAlign: 'center',
+    },
+    cardTitle: {
+        alignItems: 'center',
+    },
 });
 
 export default QuienesSomos;

@@ -8,7 +8,7 @@ npm audit fix
 ```
 
 ## INDICE
-- [Info](#Ejercicio-1)
+- [Info](#INFO)
 - [Ejercicios:](#Ejercicios)
     - [Ejercicio 1](#Ejercicio-1)
     - [Ejercicio 2](#Ejercicio-2)
@@ -51,3 +51,6 @@ Añadidos los archivos `HomeComponent.js`, `cabeceras.js` y `actividades.js`. Mo
 
 ### Ejercicio 6
 Modificación de `CampobaseComponent.js` para añadir en la ventana deslizante los apartados Quienes somos y Contato. Componentes nuevos en la carpeta `/Componentes` (`QuienesSomosComponent.js` y `ContatoComponent.js`). 
+
+### Ejercicio 7
+Modificado el componente `CampobaseComponent.js` para poder hacer display del botón de menu. Añadida imagen de logo al menu desplegable. Añadido boton de like y comentarios a las Excursiones en `DetalleExcursionComponent.js`.
