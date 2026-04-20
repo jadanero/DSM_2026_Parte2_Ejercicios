@@ -54,3 +54,6 @@ Modificación de `CampobaseComponent.js` para añadir en la ventana deslizante l
 
 ### Ejercicio 7
 Modificado el componente `CampobaseComponent.js` para poder hacer display del botón de menu. Añadida imagen de logo al menu desplegable. Añadido boton de like y comentarios a las Excursiones en `DetalleExcursionComponent.js`.
+
+### Ejercicio 8
+Modificados varios componentes. Añadida base de datos al servicio y js de constantes.

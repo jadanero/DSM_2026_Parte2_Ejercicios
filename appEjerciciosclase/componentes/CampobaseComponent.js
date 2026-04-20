@@ -7,12 +7,15 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { NavigationContainer, DrawerActions } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { colorGaztaroaClaro, colorGaztaroaOscuro } from './comun/comun';
+
 import Home from './HomeComponent';
 import { EXCURSIONES } from './comun/excursiones';
 import Calendario from './CalendarioComponent';
 import DetalleExcursion from './DetalleExcursionComponent';
 import Contacto from './ContactoComponent';
 import QuienesSomos from './QuienesSomosComponent';
+
 
 
 const Stack = createNativeStackNavigator();
@@ -70,7 +73,7 @@ class Campobase extends Component {
         initialRouteName="Home"
         screenOptions={{
           headerTintColor: '#fff',
-          headerStyle: { backgroundColor: '#015afc' },
+          headerStyle: colorGaztaroaOscuro,
           headerTitleStyle: { color: '#fff' },
         }}
       >
@@ -91,7 +94,7 @@ class Campobase extends Component {
         initialRouteName="Calendario"
         screenOptions={{
           headerTintColor: '#fff',
-          headerStyle: { backgroundColor: '#015afc' },
+          headerStyle: colorGaztaroaOscuro,
           headerTitleStyle: { color: '#fff' },
         }}
       >
@@ -131,7 +134,7 @@ class Campobase extends Component {
         initialRouteName="Contacto"
         screenOptions={{
           headerTintColor: '#fff',
-          headerStyle: { backgroundColor: '#015afc' },
+          headerStyle: colorGaztaroaOscuro,
           headerTitleStyle: { color: '#fff' },
         }}
       >
@@ -151,7 +154,7 @@ class Campobase extends Component {
         initialRouteName="QuienesSomos"
         screenOptions={{
           headerTintColor: '#fff',
-          headerStyle: { backgroundColor: '#015afc' },
+          headerStyle: colorGaztaroaOscuro,
           headerTitleStyle: { color: '#fff' },
         }}
       >
@@ -173,7 +176,7 @@ class Campobase extends Component {
         screenOptions={{
           headerShown: false,
           drawerStyle: {
-            backgroundColor: '#c2d3da',
+            backgroundColor: colorGaztaroaClaro,
           },
         }}
       >
@@ -249,7 +252,7 @@ const styles = StyleSheet.create({
   },
 
   drawerHeader: {
-    backgroundColor: '#015afc',
+    backgroundColor: colorGaztaroaOscuro,
     height: 100,
     flexDirection: 'row',
     alignItems: 'center',
