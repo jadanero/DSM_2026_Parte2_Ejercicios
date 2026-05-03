@@ -4,7 +4,14 @@ import { Card, Text, IconButton } from 'react-native-paper';
 import { EXCURSIONES } from './comun/excursiones';
 import { COMENTARIOS } from './comun/comentarios';
 import { baseUrl } from './comun/comun';
+import { connect } from 'react-redux';
 
+const mapStateToProps = (state) => {
+  return {
+    excursiones: state.excursiones.excursiones,
+    comentarios: state.comentarios.comentarios
+  };
+};
 
 function RenderExcursion(props) {
   const excursion = props.excursion;
@@ -14,7 +21,7 @@ function RenderExcursion(props) {
       <Card style={styles.card}>
 
         <ImageBackground
-          source={ {uri: baseUrl + excursion.imagen} }
+          source={{ uri: baseUrl + excursion.imagen }}
           style={styles.image}
         >
 
@@ -75,8 +82,6 @@ class DetalleExcursion extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      excursiones: EXCURSIONES,
-      comentarios: COMENTARIOS,
       favoritos: []
     };
   }
@@ -94,12 +99,12 @@ class DetalleExcursion extends Component {
     return (
       <ScrollView>
         <RenderExcursion
-          excursion={this.state.excursiones[+excursionId]}
+          excursion={this.props.excursiones[+excursionId]}
           favorita={this.state.favoritos.some(el => el === +excursionId)}
           onPress={() => this.marcarFavorito(+excursionId)}
         />
         <RenderComentario
-          comentarios={this.state.comentarios.filter((comentario) => comentario.excursionId === excursionId)}
+          comentarios={this.props.comentarios.filter((comentario) => comentario.excursionId === excursionId)}
         />
       </ScrollView>
     );
@@ -140,4 +145,6 @@ const styles = StyleSheet.create({
   }
 });
 
-export default DetalleExcursion;
+
+
+export default connect(mapStateToProps)(DetalleExcursion);
